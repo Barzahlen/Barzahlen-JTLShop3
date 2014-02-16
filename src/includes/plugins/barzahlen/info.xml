@@ -15,6 +15,9 @@
     <Version nr="101">
       <CreateDate>2012-11-01</CreateDate>
     </Version>
+    <Version nr="102">
+      <CreateDate>2013-01-29</CreateDate>
+    </Version>
 
     <Hooks>
       <Hook id="15">description.php</Hook>
@@ -40,7 +43,7 @@
         <MethodLanguage iso="GER">
           <Name>Barzahlen</Name>
           <ChargeName>Barzahlen</ChargeName>
-          <InfoText>Mit Abschluss der Bestellung erhalten Sie einen Zahlschein, den Sie sich ausdrucken oder auf Ihr Handy schicken lassen können. Bezahlen Sie den Online-Einkauf mit Hilfe des Zahlscheins in einem Barzahlen-Partnergeschäft in Ihrer Nähe.</InfoText>
+          <InfoText>Mit Abschluss der Bestellung bekommen Sie einen Zahlschein angezeigt, den Sie sich ausdrucken oder auf Ihr Handy schicken lassen können. Bezahlen Sie den Online-Einkauf mit Hilfe des Zahlscheins an der Kasse einer Barzahlen-Partnerfiliale.</InfoText>
         </MethodLanguage>
         <MethodLanguage iso="ENG">
           <Name>Barzahlen</Name>
@@ -59,17 +62,17 @@
         </Setting>
         <Setting type="zahl" initialValue="" sort="2" conf="Y">
           <Name>Shop ID</Name>
-          <Description>Ihre persönliche Shop-Kennzahl</Description>
+          <Description>Ihre Barzahlen Shop ID</Description>
           <ValueName>shopid</ValueName>
         </Setting>
         <Setting type="text" initialValue="" sort="3" conf="Y">
           <Name>Zahlungsschlüssel</Name>
-          <Description>Ihr geheimer Zahlungsschlüssel</Description>
+          <Description>Ihr Barzahlen Zahlungsschüssel</Description>
           <ValueName>paymentkey</ValueName>
         </Setting>
         <Setting type="text" initialValue="" sort="4" conf="Y">
           <Name>Benachrichtigungsschlüssel</Name>
-          <Description>Ihr geheimer Benachrichtigungsschlüssel</Description>
+          <Description>Ihr Barzahlen Benachrichtigungsschlüssel</Description>
           <ValueName>notificationkey</ValueName>
         </Setting>
         <Setting type="selectbox" initialValue="0" sort="5" conf="Y">
@@ -85,12 +88,6 @@
     </PaymentMethod>
 
     <Locales>
-      <Variable>
-        <Name>success_heading</Name>
-        <Description>Success Page Title</Description>
-        <VariableLocalized iso="GER">Einfach und sicher online bezahlen</VariableLocalized>
-        <VariableLocalized iso="ENG">Simple and secure online payment</VariableLocalized>
-      </Variable>
       <Variable>
         <Name>pending</Name>
         <Description>Pending State</Description>

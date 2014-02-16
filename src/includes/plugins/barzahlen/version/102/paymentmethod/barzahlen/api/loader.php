@@ -1,6 +1,6 @@
 <?php
 /**
- * Barzahlen Payment Module SDK
+ * Barzahlen Payment Module SDK (JTL Shop 3)
  *
  * NOTICE OF LICENSE
  *
@@ -21,15 +21,13 @@
  * @license     http://opensource.org/licenses/GPL-3.0  GNU General Public License, version 3 (GPL-3.0)
  */
 
-class ExceptionTest extends PHPUnit_Framework_TestCase {
-
-  /**
-   * Testing the correct output.
-   */
-  public function testToString() {
-
-    $exception = new Barzahlen_Exception('An error occurred.', 42);
-    $this->assertEquals("Barzahlen_Exception: [42] - An error occurred.\n", $exception->__toString());
-  }
-}
+require_once('base.php');
+require_once('api.php');
+require_once('request_base.php');
+require_once('request_payment.php');
+require_once('request_refund.php');
+require_once('request_resend.php');
+require_once('request_update.php');
+require_once('exception.php');
+require_once('notification.php');
 ?>
