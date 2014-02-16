@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding="ISO-8859-1"?>
+<jtlshop3plugin>
+  <Name>Barzahlen</Name>
+  <Description>Dieses Plugin ermöglicht die Anbindung von Barzahlen als Zahlungsmethode.</Description>
+  <Author>Alexander Diebler</Author>
+  <URL>http://www.barzahlen.de</URL>
+  <XMLVersion>100</XMLVersion>
+  <ShopVersion>300</ShopVersion>
+  <PluginID>ZerebroInternet_Barzahlen</PluginID>
+  <Install>
+
+    <Version nr="100">
+      <CreateDate>2012-09-30</CreateDate>
+    </Version>
+
+    <Hooks>
+      <Hook id="15">description.php</Hook>
+      <Hook id="144">callback.php</Hook>
+    </Hooks>
+
+    <PaymentMethod>
+      <Method>
+        <Name>Barzahlen</Name>
+        <PictureURL>barzahlen/template/barzahlen_logo.png</PictureURL>
+        <Sort>0</Sort>
+        <SendMail>0</SendMail>
+        <Provider>Zerebro Internet GmbH</Provider>
+        <TSCode>OTHER</TSCode>
+        <PreOrder>0</PreOrder>
+        <Soap>0</Soap>
+        <Curl>1</Curl>
+        <Sockets>0</Sockets>
+        <ClassFile>barzahlen/barzahlen.class.php</ClassFile>
+        <ClassName>Barzahlen</ClassName>
+        <TemplateFile>barzahlen/template/bestellabschluss.tpl</TemplateFile>
+
+        <MethodLanguage iso="GER">
+          <Name>Barzahlen</Name>
+          <ChargeName>Barzahlen</ChargeName>
+          <InfoText>Mit Abschluss der Bestellung erhalten Sie einen Zahlschein, den Sie sich ausdrucken oder auf Ihr Handy schicken lassen können. Bezahlen Sie den Online-Einkauf mit Hilfe des Zahlscheins in einem Barzahlen-Partnergeschäft in Ihrer Nähe. Den nächsten Barzahlen Partner finden Sie auf www.barzahlen.de/filialfinder</InfoText>
+        </MethodLanguage>
+        <MethodLanguage iso="ENG">
+          <Name>Barzahlen</Name>
+          <ChargeName>Barzahlen</ChargeName>
+          <InfoText>After completing your order you get a payment slip from Barzahlen that you can easily print out or have it sent via SMS to your mobile phone. With the help of that payment slip you can pay your online purchase at one of our retail partners (e.g. supermarket). You can find the next Barzahlen partner at www.barzahlen.de/filialfinder</InfoText>
+        </MethodLanguage>
+
+        <Setting type="selectbox" initialValue="1" sort="1" conf="Y">
+          <Name>Testmodus</Name>
+          <Description>Aktivierung des Testmodus</Description>
+          <ValueName>sandbox</ValueName>
+          <SelectboxOptions>
+            <Option value="0" sort="1">Deaktiviert</Option>
+            <Option value="1" sort="2">Aktiviert</Option>
+          </SelectboxOptions>
+        </Setting>
+        <Setting type="zahl" initialValue="" sort="2" conf="Y">
+          <Name>Shop ID</Name>
+          <Description>Ihre persönliche Shop-Kennzahl</Description>
+          <ValueName>shopid</ValueName>
+        </Setting>
+        <Setting type="text" initialValue="" sort="3" conf="Y">
+          <Name>Zahlungsschlüssel</Name>
+          <Description>Ihr geheimer Zahlungsschlüssel</Description>
+          <ValueName>paymentkey</ValueName>
+        </Setting>
+        <Setting type="text" initialValue="" sort="4" conf="Y">
+          <Name>Benachrichtigungsschlüssel</Name>
+          <Description>Ihr geheimer Benachrichtigungsschlüssel</Description>
+          <ValueName>notificationkey</ValueName>
+        </Setting>
+        <Setting type="selectbox" initialValue="0" sort="5" conf="Y">
+          <Name>Debugging</Name>
+          <Description>Aktivierung des Debugging</Description>
+          <ValueName>debug</ValueName>
+          <SelectboxOptions>
+            <Option value="0" sort="1">Deaktiviert</Option>
+            <Option value="1" sort="2">Aktiviert</Option>
+          </SelectboxOptions>
+        </Setting>
+      </Method>
+    </PaymentMethod>
+
+    <Locales>
+      <Variable>
+        <Name>success_heading</Name>
+        <Description>Success Page Title</Description>
+        <VariableLocalized iso="GER">Einfach und sicher online bezahlen</VariableLocalized>
+        <VariableLocalized iso="ENG">Simple and secure online payment with cash</VariableLocalized>
+      </Variable>
+      <Variable>
+        <Name>pending</Name>
+        <Description>Pending State</Description>
+        <VariableLocalized iso="GER">ausstehend</VariableLocalized>
+        <VariableLocalized iso="ENG">pending</VariableLocalized>
+      </Variable>
+      <Variable>
+        <Name>paid</Name>
+        <Description>Paid State</Description>
+        <VariableLocalized iso="GER">bezahlt</VariableLocalized>
+        <VariableLocalized iso="ENG">paid</VariableLocalized>
+      </Variable>
+      <Variable>
+        <Name>expired</Name>
+        <Description>Expired State</Description>
+        <VariableLocalized iso="GER">abgelaufen</VariableLocalized>
+        <VariableLocalized iso="ENG">expired</VariableLocalized>
+      </Variable>
+      <Variable>
+        <Name>error</Name>
+        <Description>Denied State</Description>
+        <VariableLocalized iso="GER">Fehler</VariableLocalized>
+        <VariableLocalized iso="ENG">Error</VariableLocalized>
+      </Variable>
+    </Locales>
+
+  </Install>
+</jtlshop3plugin>
