@@ -1,6 +1,6 @@
 <?php
 /**
- * Barzahlen Payment Module SDK
+ * Barzahlen Payment Module SDK (JTL Shop 3)
  *
  * NOTICE OF LICENSE
  *
@@ -21,18 +21,24 @@
  * @license     http://opensource.org/licenses/GPL-3.0  GNU General Public License, version 3 (GPL-3.0)
  */
 
-require_once('src/includes/plugins/barzahlen/version/101/paymentmethod/barzahlen/api/loader.php');
+class Barzahlen_Exception extends Exception {
 
-define('SHOPID', '10483');
-define('PAYMENTKEY', 'de74310368a4718a48e0e244fbf3e22e2ae117f2');
-define('NOTIFICATIONKEY', 'e5354004de1001f86004090d01982a6e05da1c12');
+  /**
+   * Constructor to create exception, uses parent function.
+   */
+  public function __construct($message, $code = 0) {
 
-function emptyLog() {
+    parent::__construct($message, $code);
+  }
 
-  fclose(fopen(__DIR__ . "/barzahlen.log", "w"));
-}
+  /**
+   * Output exception.
+   *
+   * @return string with error code and message
+   */
+  public function __toString() {
 
-function writeLog($logFile, $message) {
-  error_log($message, 3, $logFile);
+    return __CLASS__ . ": [{$this->code}] - {$this->message}\n";
+  }
 }
 ?>

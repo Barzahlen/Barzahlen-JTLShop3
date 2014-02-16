@@ -1,6 +1,6 @@
 <?php
 /**
- * Barzahlen Payment Module SDK
+ * Barzahlen Payment Module SDK (JTL Shop 3)
  *
  * NOTICE OF LICENSE
  *
@@ -21,18 +21,13 @@
  * @license     http://opensource.org/licenses/GPL-3.0  GNU General Public License, version 3 (GPL-3.0)
  */
 
-require_once('src/includes/plugins/barzahlen/version/101/paymentmethod/barzahlen/api/loader.php');
-
-define('SHOPID', '10483');
-define('PAYMENTKEY', 'de74310368a4718a48e0e244fbf3e22e2ae117f2');
-define('NOTIFICATIONKEY', 'e5354004de1001f86004090d01982a6e05da1c12');
-
-function emptyLog() {
-
-  fclose(fopen(__DIR__ . "/barzahlen.log", "w"));
-}
-
-function writeLog($logFile, $message) {
-  error_log($message, 3, $logFile);
-}
+require_once('base.php');
+require_once('api.php');
+require_once('request_base.php');
+require_once('request_payment.php');
+require_once('request_refund.php');
+require_once('request_resend.php');
+require_once('request_update.php');
+require_once('exception.php');
+require_once('notification.php');
 ?>

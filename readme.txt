@@ -6,4 +6,4 @@ Barzahlen Payment Module (JTL Shop 3)
 http://www.barzahlen.de
 
 ==Current Version==
-1.0.0
+1.0.1

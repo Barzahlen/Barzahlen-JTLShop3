@@ -12,6 +12,9 @@
     <Version nr="100">
       <CreateDate>2012-09-30</CreateDate>
     </Version>
+    <Version nr="101">
+      <CreateDate>2012-11-01</CreateDate>
+    </Version>
 
     <Hooks>
       <Hook id="15">description.php</Hook>
@@ -37,12 +40,12 @@
         <MethodLanguage iso="GER">
           <Name>Barzahlen</Name>
           <ChargeName>Barzahlen</ChargeName>
-          <InfoText>Mit Abschluss der Bestellung erhalten Sie einen Zahlschein, den Sie sich ausdrucken oder auf Ihr Handy schicken lassen können. Bezahlen Sie den Online-Einkauf mit Hilfe des Zahlscheins in einem Barzahlen-Partnergeschäft in Ihrer Nähe. Den nächsten Barzahlen Partner finden Sie auf www.barzahlen.de/filialfinder</InfoText>
+          <InfoText>Mit Abschluss der Bestellung erhalten Sie einen Zahlschein, den Sie sich ausdrucken oder auf Ihr Handy schicken lassen können. Bezahlen Sie den Online-Einkauf mit Hilfe des Zahlscheins in einem Barzahlen-Partnergeschäft in Ihrer Nähe.</InfoText>
         </MethodLanguage>
         <MethodLanguage iso="ENG">
           <Name>Barzahlen</Name>
           <ChargeName>Barzahlen</ChargeName>
-          <InfoText>After completing your order you get a payment slip from Barzahlen that you can easily print out or have it sent via SMS to your mobile phone. With the help of that payment slip you can pay your online purchase at one of our retail partners (e.g. supermarket). You can find the next Barzahlen partner at www.barzahlen.de/filialfinder</InfoText>
+          <InfoText>After completing your order you get a payment slip from Barzahlen that you can easily print out or have it sent via SMS to your mobile phone. With the help of that payment slip you can pay your online purchase at one of our retail partners (e.g. supermarket).</InfoText>
         </MethodLanguage>
 
         <Setting type="selectbox" initialValue="1" sort="1" conf="Y">
@@ -86,7 +89,7 @@
         <Name>success_heading</Name>
         <Description>Success Page Title</Description>
         <VariableLocalized iso="GER">Einfach und sicher online bezahlen</VariableLocalized>
-        <VariableLocalized iso="ENG">Simple and secure online payment with cash</VariableLocalized>
+        <VariableLocalized iso="ENG">Simple and secure online payment</VariableLocalized>
       </Variable>
       <Variable>
         <Name>pending</Name>
