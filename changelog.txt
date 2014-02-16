@@ -1,3 +1,7 @@
+==1.0.3 (14.02.2013)==
+* added automatic iso conversion for payment requests
+* removed global variables from notification routine
+
 ==1.0.2 (29.01.2013)==
 * redesigned payment selection and checkout success page
 
