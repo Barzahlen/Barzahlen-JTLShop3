@@ -1,3 +1,8 @@
+==1.0.4 (11.03.2013)==
+* changed image urls to make use of https
+* updated cURL certificate bundle
+* avoid resending order to WaWi after status change
+
 ==1.0.3 (14.02.2013)==
 * added automatic iso conversion for payment requests
 * removed global variables from notification routine
