@@ -38,7 +38,7 @@ https://integration.barzahlen.de/de/shopsysteme/jtl-shop-3/nutzerhandbuch
 * initial release
 
 ## Support
-The Barzahlen Team will happily assist you with any problems or questions. Send us an email to support@barzahlen.de or use the contact form at http://www.barzahlen.de/partner/integration.
+The Barzahlen Team will happily assist you with any problems or questions. Send us an email to support@barzahlen.de or use the contact form at https://integration.barzahlen.de/en/support.
 
 ## Copyright
 (c) 2014, Cash Payment Solutions GmbH  
