@@ -1,5 +1,7 @@
 # Barzahlen Payment Module (JTL Shop 3)
 
+[![Build Status](https://travis-ci.org/Barzahlen/Barzahlen-JTLShop3.svg?branch=master)](https://travis-ci.org/Barzahlen/Barzahlen-JTLShop3)
+
 ## User Manual
 https://integration.barzahlen.de/de/shopsysteme/jtl-shop-3/nutzerhandbuch
 
