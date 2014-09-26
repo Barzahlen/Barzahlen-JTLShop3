@@ -1,14 +1,13 @@
 <?xml version='1.0' encoding="ISO-8859-1"?>
 <jtlshop3plugin>
   <Name>Barzahlen</Name>
-  <Description>Dieses Plugin ermöglicht die Anbindung von Barzahlen als Zahlungsmethode.</Description>
-  <Author>Alexander Diebler</Author>
-  <URL>http://www.barzahlen.de</URL>
+  <Description>Barzahlen bietet Ihren Kunden die Möglichkeit, online bar zu bezahlen. Sie werden in Echtzeit über die Zahlung benachrichtigt und profitieren von voller Zahlungsgarantie und neuen Kundengruppen.</Description>
+  <Author>Cash Payment Solutions</Author>
+  <URL>https://www.barzahlen.de</URL>
   <XMLVersion>100</XMLVersion>
   <ShopVersion>300</ShopVersion>
-  <PluginID>ZerebroInternet_Barzahlen</PluginID>
+  <PluginID>CashPaymentSolutions_Barzahlen</PluginID>
   <Install>
-
     <Version nr="100">
       <CreateDate>2012-09-30</CreateDate>
     </Version>
@@ -27,6 +26,9 @@
     <Version nr="105">
       <CreateDate>2013-06-25</CreateDate>
     </Version>
+    <Version nr="106">
+      <CreateDate>2014-09-25</CreateDate>
+    </Version>
 
     <Hooks>
       <Hook id="15">description.php</Hook>
@@ -39,7 +41,7 @@
         <PictureURL>barzahlen/template/barzahlen_logo.png</PictureURL>
         <Sort>0</Sort>
         <SendMail>0</SendMail>
-        <Provider>Zerebro Internet GmbH</Provider>
+        <Provider>Cash Payment Solutions GmbH</Provider>
         <TSCode>OTHER</TSCode>
         <PreOrder>0</PreOrder>
         <Soap>0</Soap>
@@ -52,21 +54,21 @@
         <MethodLanguage iso="GER">
           <Name>Barzahlen</Name>
           <ChargeName>Barzahlen</ChargeName>
-          <InfoText>Mit Abschluss der Bestellung bekommen Sie einen Zahlschein angezeigt, den Sie sich ausdrucken oder auf Ihr Handy schicken lassen können. Bezahlen Sie den Online-Einkauf mit Hilfe des Zahlscheins an der Kasse einer Barzahlen-Partnerfiliale.</InfoText>
+          <InfoText>Mit Abschluss der Bestellung bekommen Sie einen Zahlschein angezeigt, den Sie sich ausdrucken oder auf Ihr Handy schicken lassen können. Bezahlen Sie den Online-Einkauf mit Hilfe des Zahlscheins an der Kasse einer Barzahlen.de-Partnerfiliale.</InfoText>
         </MethodLanguage>
         <MethodLanguage iso="ENG">
           <Name>Barzahlen</Name>
           <ChargeName>Barzahlen</ChargeName>
-          <InfoText>After completing your order you get a payment slip from Barzahlen that you can easily print out or have it sent via SMS to your mobile phone. With the help of that payment slip you can pay your online purchase at one of our retail partners (e.g. supermarket).</InfoText>
+          <InfoText>After completing your order you will receive a payment slip from Barzahlen.de that you can easily print out or have it sent via text message to your mobile phone. With the help of that payment slip you can pay your online purchase at one of our retail partners.</InfoText>
         </MethodLanguage>
 
         <Setting type="selectbox" initialValue="1" sort="1" conf="Y">
           <Name>Testmodus</Name>
-          <Description>Aktivierung des Testmodus</Description>
+          <Description>Aktivieren Sie den Testmodus um Zahlungen über die Sandbox abzuwickeln.</Description>
           <ValueName>sandbox</ValueName>
           <SelectboxOptions>
-            <Option value="0" sort="1">Deaktiviert</Option>
-            <Option value="1" sort="2">Aktiviert</Option>
+            <Option value="0" sort="1">deaktiviert</Option>
+            <Option value="1" sort="2">aktiviert</Option>
           </SelectboxOptions>
         </Setting>
         <Setting type="zahl" initialValue="" sort="2" conf="Y">
@@ -86,42 +88,14 @@
         </Setting>
         <Setting type="selectbox" initialValue="0" sort="5" conf="Y">
           <Name>Debugging</Name>
-          <Description>Aktivierung des Debugging</Description>
+          <Description>Aktivieren Sie Debugging für zusätzliches Logging.</Description>
           <ValueName>debug</ValueName>
           <SelectboxOptions>
-            <Option value="0" sort="1">Deaktiviert</Option>
-            <Option value="1" sort="2">Aktiviert</Option>
+            <Option value="0" sort="1">deaktiviert</Option>
+            <Option value="1" sort="2">aktiviert</Option>
           </SelectboxOptions>
         </Setting>
       </Method>
     </PaymentMethod>
-
-    <Locales>
-      <Variable>
-        <Name>pending</Name>
-        <Description>Pending State</Description>
-        <VariableLocalized iso="GER">ausstehend</VariableLocalized>
-        <VariableLocalized iso="ENG">pending</VariableLocalized>
-      </Variable>
-      <Variable>
-        <Name>paid</Name>
-        <Description>Paid State</Description>
-        <VariableLocalized iso="GER">bezahlt</VariableLocalized>
-        <VariableLocalized iso="ENG">paid</VariableLocalized>
-      </Variable>
-      <Variable>
-        <Name>expired</Name>
-        <Description>Expired State</Description>
-        <VariableLocalized iso="GER">abgelaufen</VariableLocalized>
-        <VariableLocalized iso="ENG">expired</VariableLocalized>
-      </Variable>
-      <Variable>
-        <Name>error</Name>
-        <Description>Denied State</Description>
-        <VariableLocalized iso="GER">Fehler</VariableLocalized>
-        <VariableLocalized iso="ENG">Error</VariableLocalized>
-      </Variable>
-    </Locales>
-
   </Install>
 </jtlshop3plugin>

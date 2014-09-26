@@ -4,9 +4,14 @@
 https://integration.barzahlen.de/de/shopsysteme/jtl-shop-3/nutzerhandbuch
 
 ## Current Version
-1.0.5
+1.0.6
 
 ## Changelog
+
+### 1.0.6 (25.09.2014)
+* callback waits for database update before sending response
+* updated Barzahlen PHP SDK to v1.1.7
+* updated texts for frontend and backend
 
 ### 1.0.5 (25.06.2013)
 * updated Barzahlen API PHP SDK

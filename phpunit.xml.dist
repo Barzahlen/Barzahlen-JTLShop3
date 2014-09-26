@@ -22,10 +22,7 @@
 
   <filter>
     <whitelist addUncoveredFilesFromWhitelist="true">
-      <directory suffix=".php">src</directory>
-      <exclude>
-        <directory>src/lang</directory>
-      </exclude>
+      <directory suffix=".php">src/includes/plugins/barzahlen/version/106</directory>
     </whitelist>
   </filter>
 
