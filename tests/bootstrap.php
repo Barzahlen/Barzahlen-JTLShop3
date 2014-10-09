@@ -1,6 +1,6 @@
 <?php
 
-require_once('src/includes/plugins/barzahlen/version/106/paymentmethod/barzahlen/api/loader.php');
+require_once('src/includes/plugins/barzahlen/version/107/paymentmethod/barzahlen/api/loader.php');
 
 define('SHOPID', '10483');
 define('PAYMENTKEY', 'de74310368a4718a48e0e244fbf3e22e2ae117f2');

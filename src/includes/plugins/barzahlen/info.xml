@@ -29,6 +29,9 @@
     <Version nr="106">
       <CreateDate>2014-09-25</CreateDate>
     </Version>
+    <Version nr="107">
+      <CreateDate>2014-10-09</CreateDate>
+    </Version>
 
     <Hooks>
       <Hook id="15">description.php</Hook>

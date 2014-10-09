@@ -6,9 +6,12 @@
 https://integration.barzahlen.de/de/shopsysteme/jtl-shop-3/nutzerhandbuch
 
 ## Current Version
-1.0.6
+1.0.7
 
 ## Changelog
+
+### 1.0.7 (09.10.2014)
+* small issues fixed
 
 ### 1.0.6 (25.09.2014)
 * callback waits for database update before sending response
