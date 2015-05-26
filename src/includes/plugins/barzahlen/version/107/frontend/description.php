@@ -5,8 +5,8 @@ $textEN = '<div id="barzahlen_description"><img id="barzahlen_special" src="http
 
 for ($i = 1; $i <= 10; $i++) {
     $count = str_pad($i, 2, "0", STR_PAD_LEFT);
-    $textDE .= '<img src="https://cdn.barzahlen.de/images/barzahlen_partner_' . $count . '.png" alt="" style="vertical-align: middle; height: 25px;" />';
-    $textEN .= '<img src="https://cdn.barzahlen.de/images/barzahlen_partner_' . $count . '.png" alt="" style="vertical-align: middle; height: 25px;" />';
+    $textDE .= '<img src="https://cdn.barzahlen.de/images/barzahlen_partner_' . $count . '.png" alt="" style="height: 1em; vertical-align: -0.1em;" />';
+    $textEN .= '<img src="https://cdn.barzahlen.de/images/barzahlen_partner_' . $count . '.png" alt="" style="height: 1em; vertical-align: -0.1em;" />';
 }
 
 $textDE .= '</div><script src="https://cdn.barzahlen.de/js/selection.js"></script>';
