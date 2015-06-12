@@ -3,12 +3,17 @@
 [![Build Status](https://travis-ci.org/Barzahlen/Barzahlen-JTLShop3.svg?branch=master)](https://travis-ci.org/Barzahlen/Barzahlen-JTLShop3)
 
 ## User Manual
-https://integration.barzahlen.de/de/shopsysteme/jtl-shop-3/nutzerhandbuch
+DE - https://integration.barzahlen.de/de/shopsysteme/jtl-shop-3/nutzerhandbuch  
+EN - https://integration.barzahlen.de/en/shopsystems/jtl-shop-3/user-manual
 
 ## Current Version
-1.0.7
+1.0.8
 
 ## Changelog
+
+### 1.0.8 (12.06.2015)
+* improved payment selection
+* updated to Barzahlen PHP SDK v1.1.8
 
 ### 1.0.7 (09.10.2014)
 * small issues fixed
@@ -46,7 +51,7 @@ https://integration.barzahlen.de/de/shopsysteme/jtl-shop-3/nutzerhandbuch
 The Barzahlen Team will happily assist you with any problems or questions. Send us an email to support@barzahlen.de or use the contact form at https://integration.barzahlen.de/en/support.
 
 ## Copyright
-(c) 2014, Cash Payment Solutions GmbH  
+(c) 2015, Cash Payment Solutions GmbH  
 https://www.barzahlen.de
 
 ## NOTICE OF LICENSE
