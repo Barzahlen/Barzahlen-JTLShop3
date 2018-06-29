@@ -1,5 +1,8 @@
 # Barzahlen Payment Module (JTL Shop 3)
 
+## Deprecation Notice
+This module is no longer maintained and should not be used for new projects. There may be a newer version with support for our [API v2](https://docs.barzahlen.de/api/v2/) in the future.
+
 [![Build Status](https://travis-ci.org/Barzahlen/Barzahlen-JTLShop3.svg?branch=master)](https://travis-ci.org/Barzahlen/Barzahlen-JTLShop3)
 
 ## User Manual
